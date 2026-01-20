@@ -230,7 +230,6 @@ vera-ai-monitoring/
 │   └── ALERTS.md                 # Alert system documentation
 │
 ├── manuscripts/                  # Academic papers
-│   ├── JICES_coordinated_behavior.pdf
 │   ├── CCR_scaling_detection.docx
 │   └── PAPERS.md                 # Paper summaries and cross-references
 │
@@ -266,9 +265,6 @@ vera-ai-monitoring/
 ## Citation
 
 If using this repository, please cite:
-
-**JICES Paper (Deceptive Information Operations)**:
-> [Authors]. (2025). Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook. *Journal of Information, Communication & Ethics in Society*.
 
 **CCR Paper (Scaling Methodology)**:
 > [Authors]. (2025). Scaling Coordinated Behavior Detection. *Computational Communication Research*.
