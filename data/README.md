@@ -22,8 +22,8 @@ data/
 |---------|----------|------|------|-------------|
 | Network Nodes | `processed/facebook_network_nodes.csv` | 14,832 | 1.1 MB | Account network membership |
 | Community Labels | `processed/community_labels.csv` | 208 | 13 KB | Cluster descriptions |
-| Community Engagement | `processed/community_engagement_classified.csv` | 208 | 934 KB | Engagement metrics |
-| Alert Links | `alerts/veraai_alerts_links.csv` | 14,244 | 24 MB | Coordinated link alerts |
+| Community Engagement | `processed/community_engagement_classified.csv` | 208 | 934 KB | Processed dataset with Claude LLM classifications |
+| Alert Links | `alerts/veraai_alerts_links.csv` | 14,244 | 24 MB | Original alert dataset (raw) |
 
 ---
 
@@ -89,7 +89,7 @@ community_id,size,label
 
 ### community_engagement_classified.csv
 
-**Description**: Comprehensive engagement metrics aggregated at the community level. Includes reaction breakdowns, cross-community sharing patterns, and derived classification fields.
+**Description**: Processed dataset with comprehensive engagement metrics aggregated at the community level. Includes reaction breakdowns, cross-community sharing patterns, and derived classification fields. The geographical origin (`region`) and primary content focus (`primary_focus`) classifications were generated using Claude LLM to analyze the network labels and account names.
 
 **Primary key**: `community_id`
 
@@ -132,7 +132,7 @@ cross_community_ratio = cross_community_urls / (cross_community_urls + exclusive
 
 ### veraai_alerts_links.csv
 
-**Description**: Comprehensive log of all coordinated link sharing alerts generated during monitoring. Each row represents a URL flagged for coordinated sharing behavior.
+**Description**: Original dataset retrieved directly from the alert system. This is the raw output of the monitoring workflow, containing a comprehensive log of all coordinated link sharing alerts. Each row represents a URL flagged for coordinated sharing behavior.
 
 **Primary key**: `alertId`
 
@@ -271,8 +271,7 @@ The `veraai_alerts_links.csv` file (24 MB) approaches GitHub's size recommendati
 
 **Access options**:
 1. **Repository sample**: First 1,000 rows included
-2. **Full dataset**: Available via external repository (contact maintainers)
-3. **On request**: Email for complete data access
+2. **Full dataset**: Available via external repository
 
 ---
 

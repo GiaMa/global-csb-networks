@@ -150,8 +150,8 @@ See [docs/DEFINITIONS.md](docs/DEFINITIONS.md) for terminology definitions.
 |------|-------------|------|
 | `data/processed/facebook_network_nodes.csv` | Network membership and connectivity | 14,832 |
 | `data/processed/community_labels.csv` | GPT-4 generated cluster descriptions | 208 |
-| `data/processed/community_engagement_classified.csv` | Engagement metrics by community | 208 |
-| `data/alerts/veraai_alerts_links.csv` | Coordinated link alerts with red flag scores | 14,244 |
+| `data/processed/community_engagement_classified.csv` | Processed dataset with engagement metrics and Claude LLM-derived classifications (geography, focus) | 208 |
+| `data/alerts/veraai_alerts_links.csv` | Original alert dataset - raw output from the monitoring workflow | 14,244 |
 
 ### Preliminary Analyses
 
@@ -273,16 +273,19 @@ If using this repository, please cite:
 
 ## License
 
-[Specify license]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Contact
+## Implementation Status
 
-[Maintainer contact information]
+**Note:** This implementation is deprecated following the CrowdTangle API closure in August 2024.
+
+For an active implementation of similar coordinated behavior detection methodology on TikTok, see Fabio Giglietto's project:
+- **TikTok Coordinated Sharing Behavior Detection**: https://fabiogiglietto.github.io/tiktok_csbn/tt_viz.html
 
 ---
 
 ## Acknowledgments
 
-This research was supported by [funding acknowledgments].
+This research was supported by [vera.ai](https://www.veraai.eu/home), a Horizon Europe project focused on tackling disinformation.

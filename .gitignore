@@ -39,11 +39,16 @@ desktop.ini
 # IDE
 .vscode/
 .idea/
+.claude/
 
 # Original files (after reorganization)
 vera-alert.code/
 *.csv
 !data/**/*.csv
+
+# Specific data files to exclude from tracking
+data/processed/community_labels.csv
+data/processed/facebook_network_nodes.csv
 
 # Plan file (development only)
 PLAN.md
